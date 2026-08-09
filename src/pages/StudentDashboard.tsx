@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BookOpen, LockKeyhole, Sparkles } from "lucide-react";
+import { LockKeyhole, Sparkles } from "lucide-react";
 import DashboardShell from "../components/DashboardShell";
 import ActivationModal from "../components/ActivationModal";
 import { supabase } from "../lib/supabase";

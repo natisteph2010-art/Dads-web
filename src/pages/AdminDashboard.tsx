@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState } from "react";
-import { BookOpen, CheckCircle2, Link2, Loader2, Plus, Trash2 } from "lucide-react";
+import { BookOpen, Link2, Loader2, Plus, Trash2 } from "lucide-react";
 import DashboardShell from "../components/DashboardShell";
 import { supabase } from "../lib/supabase";
 
