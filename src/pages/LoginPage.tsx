@@ -4,6 +4,7 @@ import { Mail, Phone, ArrowRight } from "lucide-react";
 import Logo from "../components/Logo";
 import PasswordInput from "../components/PasswordInput";
 import { supabase } from "../lib/supabase";
+import { redirectByRole } from "../lib/auth";
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ export default function LoginPage() {
         password,
       });
       if (signInError) throw signInError;
-      navigate("/");
+      await redirectByRole(navigate);
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Could not sign in.";
       setError(msg);
